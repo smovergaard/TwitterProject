@@ -45,7 +45,7 @@ def Scrape(id):
                 que.pop(0)
                 response1=client.get_users_following(ID, expansions=None, max_results=1000, user_fields=['verified','public_metrics'])
                 
-		if response1.data is not None:
+                if response1.data is not None:
                         for user in response1.data:
                                 que.append(user.id)
                                 D_dict[user.id]=[user.verified,user.public_metrics['followers_count'],user.public_metrics['following_count']]
