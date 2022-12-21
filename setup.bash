@@ -11,5 +11,5 @@ bearer_token2 = AAAAAAAAAAAAAAAAAAAAA
 bearer_token3 = AAAAAAAAAAAAAAAAAAAAA
 bearer_token4 = AAAAAAAAAAAAAAAAAAAAA" > numbers.ini
 
-python3 followingScrape.py
+python3 $1
 
